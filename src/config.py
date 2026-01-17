@@ -19,7 +19,7 @@ class Config:
     backbone: str = "resnet18"  # เริ่มจาก resnet18 เบาและพอ
     # โดยทั่วไป PatchCore จะดึง feature จาก layer กลางๆ 1-2 จุด
     # เดี๋ยวเราจะ map ชื่อ layer จริงใน feature_extractor.py อีกที
-    feature_layers: tuple = ("layer2", "layer3")
+    feature_layers: tuple = ("layer3",)
 
     # ---- Memory bank / sampling ----
     # จำนวน patch feature มักเยอะมาก ต้อง subsample
